@@ -1,24 +1,61 @@
 <template>
   <div class="mx-auto max-w-7xl p-5">
-    <div class="md:flex justify-between items-center">
+    <div class="md:flex justify-between items-center mb-3">
       <div class="space-y-4">
         <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
         <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+        <h3 class="flex items-center space-x-4 pb-2">
+          <div>
+            <font-awesome-icon class="text-green-500 text-2xl" icon="map-marker"/>
+          </div>
+          <div class="">
+            <div class="font-medium">Cincinnati, Ohio</div>
+            <div class="text-gray-500">Looking to explore new places!</div>
+          </div>
+        </h3>
       </div>
-    </div>
+      <div>
+        <div class="flex flex-col space-y-2">
+          <a href="https://tylergetsay.com" class="link hidden-screen" target="_blank">
+            https://tylergetsay.com
+          </a>
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon icon="at"/>
+            </div>
+            <a href="mailto:tylergetsay@gmail.com" class="link">
+              tylergetsay@gmail.com
+            </a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon :icon="['fab','twitter']"/>
+            </div>
+            <a href="https://twitter.com/tylergets" class="link">
+              @TylerGets
+            </a>
+          </div><div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon icon="phone"/>
+            </div>
+            <a href="tel:+14404094081" class="link">
+              +1 (440) 409-4081
+            </a>
+          </div>
+          <div class="flex hidden-print items-center space-x-2">
+            <div>
+              <font-awesome-icon :icon="'file-pdf'"/>
+            </div>
+            <a class="link " @click="download">
+              Download as PDF
+            </a>
+          </div>
 
-    <div class="py-4">
-      <div class="flex hidden-print items-center space-x-2">
-        <div>
-          <font-awesome-icon icon="file"/>
+
         </div>
-        <nuxt-link to="/resume" class="link">
-          Resume
-        </nuxt-link>
       </div>
     </div>
-
-    <div class="md:grid gap-5 space-y-2 grid-cols-4">
+    <div class="md:grid gap-5 space-y-4 grid-cols-4">
       <div class="leading-relaxed col-span-4">
         <h4 class="section-header">
           About Me
@@ -27,16 +64,75 @@
           I am a 10+ year software developer living in the Cincinnati area. I build full stack applications in a fraction of the time as others by leveraging years of experience with my environment and every bit of the modern web/mobile application stack.
         </p>
       </div>
-      <div class="col-span-4">
+      <div class="col-span-3">
+        <h4 class="section-header">
+          Experience
+        </h4>
+        <div class="space-y-4">
+          <div v-for="job in experience" class="flex flex-col space-y-1">
+            <h5><span class="font-bold">{{job.title}}</span> - <a class="link" :href="job.url" rel="noreferrer">{{job.company}}</a></h5>
+            <div class="text-gray-700">
+              <span v-if="job.start">{{$moment(job.start).format('MMM YYYY')}}</span>
+              <span v-if="job.finish"> - {{$moment(job.finish).format('MMM YYYY')}}</span>
+              <span v-else> - Present</span>
+            </div>
+            <p class="">
+              {{ job.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-3">
         <h4 class="section-header break">
-          What I Can Do For You
+          Before Code
         </h4>
         <p>
-          If you are an industry expert looking to scale your existing business or develop a new software offering, I have the skills and network necessary to bring your vision to a reality. Utilizing a lean-startup approach, I focus on building exactly what is necessary to prove the concept at minimal development time and cost.
+          Before entering the world of software development and entrepreneurship, I worked as a commissioned sales representative for various industries. Its through these experience that I pull out some of my core principals which I continue to use not only at work but day-to-day life; the skills I developed around building relationships, delivering value, and education are what sets me apart today.
         </p>
       </div>
-    </div>
+      <div class="col-span-3">
+        <h4 class="section-header break">
+          Ways I Can Help
+        </h4>
+        <p>
+          Whether you are having issues scaling an existing product, or want to bring something new to the market; I have the experience to take it from whiteboard to app store, without endless meetings that cost you time and money.
+        </p>
+      </div>
+<!--      <div class="col-span-3">-->
+<!--        <h4 class="section-header break">-->
+<!--          Projects-->
+<!--        </h4>-->
+<!--        <div class="space-y-1">-->
+<!--          <div class="flex flex-col space-y-1">-->
+<!--            <h5><span class="font-bold">University of Cincinnati</span></h5>-->
+<!--            <div class="text-gray-700">-->
+<!--              <span>{{$moment('08/01/2014').format('MMM YYYY')}}</span>-->
+<!--              <span> - {{$moment('08/01/2019').format('MMM YYYY')}}</span>-->
+<!--            </div>-->
+<!--            <p>-->
+<!--              I decided to go to-->
+<!--            </p>-->
+<!--          </div>-->
 
+<!--        </div>-->
+<!--      </div>-->
+      <div class="md:row-start-2 col-start-4 col-end-4">
+        <h4 class="section-header">
+          Technologies I Use
+        </h4>
+        <ul>
+          <li class="flex cursor-pointer transform transition ease-in-out hover:scale-110 truncate items-center space-x-2 text-md" v-for="tech in technologies">
+            <div class="w-10">
+              <font-awesome-icon :icon="tech.icon"/>
+            </div>
+            <div class="">
+              <span>{{tech.name}}</span>
+              <span class="text-gray-600 font-light">- {{ tech.level }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
