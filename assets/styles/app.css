@@ -1,0 +1,28 @@
+/*html, body {*/
+/*  @apply bg-black text-white font-mono;*/
+/*}*/
+
+@media print {
+
+  html {
+    @apply p-10;
+  }
+
+  .hidden-print {
+    display: none !important;
+  }
+
+  .break {
+    page-break-before: always;
+  }
+}
+
+@media screen {
+  .link {
+    @apply underline text-blue-500 cursor-pointer;
+  }
+  .hidden-screen {
+    display: none !important;
+  }
+}
+
