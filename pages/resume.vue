@@ -36,6 +36,13 @@
             </a>
           </div><div class="flex items-center space-x-2">
             <div>
+              <font-awesome-icon :icon="['fab','github']"/>
+            </div>
+            <a href="http://github.com/tylergets" class="link">
+              @TylerGets
+            </a>
+          </div><div class="flex items-center space-x-2">
+            <div>
               <font-awesome-icon icon="phone"/>
             </div>
             <a href="tel:+14404094081" class="link">
