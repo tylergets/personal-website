@@ -91,18 +91,10 @@
       </div>
       <div class="col-span-3">
         <h4 class="section-header break">
-          Before Code
+          Education
         </h4>
         <p>
-          Before entering the world of software development and entrepreneurship, I worked as a commissioned sales representative for various industries. Its through these experience that I pull out some of my core principals which I continue to use not only at work but day-to-day life; the skills I developed around building relationships, delivering value, and education are what sets me apart today.
-        </p>
-      </div>
-      <div class="col-span-3">
-        <h4 class="section-header break">
-          Ways I Can Help
-        </h4>
-        <p>
-          Whether you are having issues scaling an existing product, or want to bring something new to the market; I have the experience to take it from whiteboard to app store, without endless meetings that cost you time and money.
+          Bachelors in Information Technology,<span class="font-bold">University of Cincinnati</span>
         </p>
       </div>
 <!--      <div class="col-span-3">-->
