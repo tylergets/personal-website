@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-7xl p-5">
     <div class="flex items-center pb-5">
-      <div class="px-10">
+      <div class="pr-10 pl-8">
         <img class="h-32" src="~/assets/portrait.svg"/>
       </div>
       <div>
@@ -12,10 +12,37 @@
           </div>
         </div>
 
-        <div class="py-4">
-          <div class="flex hidden-print items-center space-x-2">
+        <div class="py-4 space-x-4 flex">
+          <div class="flex items-center space-x-2">
             <div>
-              <font-awesome-icon icon="file"/>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'twitter']"/>
+            </div>
+            <a target="_blank" href="https://twitter.com/tylergets" class="link">
+              Twitter
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'github']"/>
+            </div>
+            <a target="_blank" href="https://github.com/tylergets" class="link">
+              GitHub
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'linkedin']"/>
+            </div>
+            <a target="_blank" href="https://www.linkedin.com/in/tylergetsay/" class="link">
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" icon="file"/>
             </div>
             <nuxt-link to="/resume" class="link">
               Resume
