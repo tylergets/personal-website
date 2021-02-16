@@ -1,20 +1,27 @@
 <template>
   <div class="mx-auto max-w-7xl p-5">
-    <div class="md:flex justify-between items-center">
-      <div class="space-y-4">
-        <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
-        <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+    <div class="flex items-center pb-5">
+      <div class="px-10">
+        <img class="h-32" src="~/assets/portrait.svg"/>
       </div>
-    </div>
-
-    <div class="py-4">
-      <div class="flex hidden-print items-center space-x-2">
-        <div>
-          <font-awesome-icon icon="file"/>
+      <div>
+        <div class="md:flex justify-between items-center">
+          <div class="space-y-4">
+            <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
+            <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+          </div>
         </div>
-        <nuxt-link to="/resume" class="link">
-          Resume
-        </nuxt-link>
+
+        <div class="py-4">
+          <div class="flex hidden-print items-center space-x-2">
+            <div>
+              <font-awesome-icon icon="file"/>
+            </div>
+            <nuxt-link to="/resume" class="link">
+              Resume
+            </nuxt-link>
+          </div>
+        </div>
       </div>
     </div>
 
