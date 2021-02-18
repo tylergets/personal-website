@@ -77,7 +77,7 @@
         </h4>
         <div class="space-y-4">
           <div v-for="job in experience" class="flex flex-col space-y-1">
-            <h5><span class="font-bold">{{job.title}}</span> - <a class="link" :href="job.url" rel="noreferrer">{{job.company}}</a></h5>
+            <h5><span class="font-bold">{{job.title}}</span><a v-if="job.company" class="link" :href="job.url" rel="noreferrer"> - {{job.company}}</a></h5>
             <div class="text-gray-700">
               <span v-if="job.start">{{$moment(job.start).format('MMM YYYY')}}</span>
               <span v-if="job.finish"> - {{$moment(job.finish).format('MMM YYYY')}}</span>
@@ -263,7 +263,6 @@ export default {
         {
           title: "Freelancer",
           start: moment('01-01-2005'),
-          company: "Fanvester",
           url: "https://tylergetsay.com",
           description: "I have helped many small to medium size businesses navigate the growing web landscape; this has manifested in many websites, apps, and internal tools which have been used by millions of users; and subsequently produced millions of dollars in revenue."
         }
