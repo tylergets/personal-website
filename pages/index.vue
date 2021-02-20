@@ -1,20 +1,54 @@
 <template>
   <div class="mx-auto max-w-7xl p-5">
-    <div class="md:flex justify-between items-center">
-      <div class="space-y-4">
-        <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
-        <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+    <div class="flex items-center pb-5">
+      <div class="pr-10 pl-8">
+        <img class="h-32" src="~/assets/portrait.svg"/>
       </div>
-    </div>
-
-    <div class="py-4">
-      <div class="flex hidden-print items-center space-x-2">
-        <div>
-          <font-awesome-icon icon="file"/>
+      <div>
+        <div class="md:flex justify-between items-center">
+          <div class="space-y-4">
+            <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
+            <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+          </div>
         </div>
-        <nuxt-link to="/resume" class="link">
-          Resume
-        </nuxt-link>
+
+        <div class="py-4 space-x-4 flex">
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'twitter']"/>
+            </div>
+            <a target="_blank" href="https://twitter.com/tylergets" class="link">
+              Twitter
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'github']"/>
+            </div>
+            <a target="_blank" href="https://github.com/tylergets" class="link">
+              GitHub
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" :icon="['fab', 'linkedin']"/>
+            </div>
+            <a target="_blank" href="https://www.linkedin.com/in/tylergetsay/" class="link">
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" icon="file"/>
+            </div>
+            <nuxt-link to="/resume" class="link">
+              Resume
+            </nuxt-link>
+          </div>
+        </div>
       </div>
     </div>
 

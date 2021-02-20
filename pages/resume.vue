@@ -77,7 +77,7 @@
         </h4>
         <div class="space-y-4">
           <div v-for="job in experience" class="flex flex-col space-y-1">
-            <h5><span class="font-bold">{{job.title}}</span> - <a class="link" :href="job.url" rel="noreferrer">{{job.company}}</a></h5>
+            <h5><span class="font-bold">{{job.title}}</span><a v-if="job.company" class="link" :href="job.url" rel="noreferrer"> - {{job.company}}</a></h5>
             <div class="text-gray-700">
               <span v-if="job.start">{{$moment(job.start).format('MMM YYYY')}}</span>
               <span v-if="job.finish"> - {{$moment(job.finish).format('MMM YYYY')}}</span>
@@ -91,18 +91,10 @@
       </div>
       <div class="col-span-3">
         <h4 class="section-header break">
-          Before Code
+          Education
         </h4>
         <p>
-          Before entering the world of software development and entrepreneurship, I worked as a commissioned sales representative for various industries. Its through these experience that I pull out some of my core principals which I continue to use not only at work but day-to-day life; the skills I developed around building relationships, delivering value, and education are what sets me apart today.
-        </p>
-      </div>
-      <div class="col-span-3">
-        <h4 class="section-header break">
-          Ways I Can Help
-        </h4>
-        <p>
-          Whether you are having issues scaling an existing product, or want to bring something new to the market; I have the experience to take it from whiteboard to app store, without endless meetings that cost you time and money.
+          Bachelors in Information Technology,<span class="font-bold">University of Cincinnati</span>
         </p>
       </div>
 <!--      <div class="col-span-3">-->
@@ -274,7 +266,6 @@ export default {
         {
           title: "Freelancer",
           start: moment('01-01-2005'),
-          company: "Fanvester",
           url: "https://tylergetsay.com",
           description: "I have helped many small to medium size businesses navigate the growing web landscape; this has manifested in many websites, apps, and internal tools which have been used by millions of users; and subsequently produced millions of dollars in revenue."
         }
