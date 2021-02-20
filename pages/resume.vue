@@ -165,6 +165,9 @@ export default {
       window.print();
     }
   },
+  head: {
+    title: 'Resume',
+  },
   data() {
     return {
       technologies: [

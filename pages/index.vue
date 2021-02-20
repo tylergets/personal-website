@@ -27,6 +27,8 @@
           I am a 10+ year software developer living in the Cincinnati area. I build full stack applications in a fraction of the time as others by leveraging years of experience with my environment and every bit of the modern web/mobile application stack.
         </p>
       </div>
+
+
       <div class="col-span-4">
         <h4 class="section-header break">
           What I Can Do For You

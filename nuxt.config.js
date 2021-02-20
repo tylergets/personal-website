@@ -4,7 +4,12 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Tyler Getsay',
+    titleTemplate: (title) => {
+      if(title) {
+        return `${title} - Tyler Getsay`;
+      }
+      return 'Tyler Getsay';
+    },
     htmlAttrs: {
       lang: 'en'
     },
