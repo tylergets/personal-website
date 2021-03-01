@@ -164,6 +164,11 @@ export default {
     return {
       technologies: [
         {
+          name: 'Full Stack Web',
+          level: 'Advanced',
+          icon: 'web',
+        },
+        {
           name: 'Javascript',
           level: 'Advanced',
           icon: ['fab', 'js']
