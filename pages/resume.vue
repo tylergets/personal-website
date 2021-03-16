@@ -160,6 +160,7 @@ export default {
   head: {
     title: 'Resume',
   },
+  layout: 'full',
   data() {
     return {
       technologies: [

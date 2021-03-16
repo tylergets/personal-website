@@ -3,7 +3,7 @@
     <div>
       Here is a list of podcasts I like
     </div>
-    <ul class="list-disc list-inside">
+    <ul class="mt-4 list-disc list-inside">
       <li v-for="item in list" >
         <a :href="item.link" target="_blank" class="text-blue-500 underline">
           {{item.name}}
@@ -16,6 +16,9 @@
 <script>
 export default {
   name: "podcasts",
+  head: {
+    title: 'Podcasts'
+  },
   data() {
     return {
       list: [

@@ -69,7 +69,7 @@
 <script>
 
 export default {
-
+  layout: 'full'
 }
 </script>
 

@@ -57,6 +57,7 @@
 
 <script>
 export default {
+  layout: 'full',
   async asyncData({ $content, route }) {
 
     const document = await $content(route.params.page).fetch();
