@@ -48,6 +48,15 @@
               Resume
             </nuxt-link>
           </div>
+
+          <div class="flex items-center space-x-2">
+            <div>
+              <font-awesome-icon class="text-blue-500" icon="black-tie"/>
+            </div>
+            <nuxt-link to="/awesome" class="link">
+              Awesome
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
