@@ -75,7 +75,8 @@ export default {
           name: "Naval",
           link: "https://nav.al/"
         }
-    }
+      ]
+    };
   }
 }
 </script>
