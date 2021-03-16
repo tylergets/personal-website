@@ -1,13 +1,20 @@
 <template>
   <div>
-    <div>
-      Stuff I like
+    <div class="mb-6">
+      <h1 class="font-medium">Awesome lists</h1>
     </div>
-    <div>
-      <nuxt-link to="/awesome/podcasts" class="text-blue-500 underline">
-        Podcasts
-      </nuxt-link>
-    </div>
+    <ol class="space-y-2 list-disc list-inside">
+      <li>
+        <nuxt-link to="/awesome/books" class="text-blue-500 underline">
+          Books
+        </nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/awesome/podcasts" class="text-blue-500 underline">
+          Podcasts
+        </nuxt-link>
+      </li>
+    </ol>
   </div>
 </template>
 

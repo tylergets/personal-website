@@ -1,9 +1,9 @@
 <template>
-  <div class="p-4">
+  <div>
     <div>
       Here is a list of podcasts I like
     </div>
-    <ul class="mt-4 list-disc list-inside">
+    <ul class="mt-4 space-y-2 list-disc list-inside">
       <li v-for="item in list" >
         <a :href="item.link" target="_blank" class="text-blue-500 underline">
           {{item.name}}

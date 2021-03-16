@@ -51,7 +51,7 @@
 
           <div class="flex items-center space-x-2">
             <div>
-              <font-awesome-icon class="text-blue-500" icon="black-tie"/>
+              <font-awesome-icon class="text-blue-500" icon="gifts"/>
             </div>
             <nuxt-link to="/awesome" class="link">
               Awesome
