@@ -14,6 +14,11 @@
           Podcasts
         </nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/awesome/posts" class="text-blue-500 underline">
+          Posts / Articles
+        </nuxt-link>
+      </li>
     </ol>
   </div>
 </template>
