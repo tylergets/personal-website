@@ -8,7 +8,7 @@
         <div class="md:flex justify-between items-center">
           <div class="space-y-4">
             <h1 class="text-5xl md:text-6xl font-bold font-mono">Tyler Getsay</h1>
-            <h2 class="text-xl font-medium">Full Stack Developer interested in startups, economics, & design.</h2>
+            <h2 class="text-xl font-medium">Full Stack Developer interested in lean startups, economics, & design.</h2>
           </div>
         </div>
 
