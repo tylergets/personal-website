@@ -19,6 +19,11 @@
           Posts / Articles
         </nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/awesome/checklists" class="text-blue-500 underline">
+          Checklists
+        </nuxt-link>
+      </li>
     </ol>
   </div>
 </template>
